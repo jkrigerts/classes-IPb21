@@ -1,12 +1,8 @@
 <?php
 
-class Car {
-  public $brand;
+include_once("Vehicle.php"); 
 
-  public function __construct($brand) {
-    $this->brand = $brand;
-    echo $this->brand . " is alive <br>";
-  }
+class Car extends Vehicle {
 
   public function __destruct()
   {
